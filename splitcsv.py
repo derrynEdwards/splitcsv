@@ -3,7 +3,7 @@
     File name           : web.py
     Author              : Derryn Edwards
     Date Created        : 2020/11/16
-    Date Last Modified  : 2020/11/16 09:48:21
+    Date Last Modified  : 2020/11/16 10:34:37
     Python Version      : 3.9
 """
 # ==================================================================================================
@@ -20,6 +20,7 @@ try:
     # opens csv file
     csv_file = open(file_name, 'r')
     csv_data = list(csv.reader(csv_file, delimiter=','))
+    csv_file.close()
     # line counters and mappers
     line_count = 0
     line_mapper = 0
